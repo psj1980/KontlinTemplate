@@ -3,7 +3,9 @@ package com.example.pia.template
 import android.app.Activity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
+import org.jetbrains.anko.onCheckedChange
 import org.jetbrains.anko.onClick
+import org.jetbrains.anko.radioGroup
 import org.jetbrains.anko.toast
 
 class MainActivity : Activity() {
@@ -14,5 +16,7 @@ class MainActivity : Activity() {
 
         message.text = "Pia's template"
         toastButton.onClick { toast("Button clicked") }
+
+        radioButton.onClick { toast("radio1 clicked") }
     }
 }
